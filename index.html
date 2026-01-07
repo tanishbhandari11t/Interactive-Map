@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive World Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive World Map</h1>
+            <p>Hover over countries to see their names, click to view details</p>
+        </header>
+
+        <div class="map-container">
+            <div id="map-wrapper">
+                <!-- SVG Map will be loaded here -->
+            </div>
+            
+            <!-- Tooltip -->
+            <div id="tooltip" class="tooltip"></div>
+            
+            <!-- Zoom Controls -->
+            <div class="zoom-controls">
+                <button id="zoom-in" class="zoom-btn" title="Zoom In">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button id="zoom-out" class="zoom-btn" title="Zoom Out">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M4 10h12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+                <button id="zoom-reset" class="zoom-btn" title="Reset Zoom">
+                    <svg width="20" height="20" viewBox="0 0 20 20">
+                        <path d="M16 10c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M10 4l2-2m0 0l-2-2m2 2H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Side Panel for Country Data -->
+        <div id="side-panel" class="side-panel">
+            <button id="close-panel" class="close-btn">&times;</button>
+            <div id="panel-content">
+                <div class="loading">Click a country to view details</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
