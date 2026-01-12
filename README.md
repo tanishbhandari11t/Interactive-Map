@@ -6,6 +6,10 @@ An interactive, web-based world map application that allows users to explore cou
 
 This is a fully interactive world map built using HTML, CSS, and JavaScript. The application provides an engaging way to explore geographical data by allowing users to interact with an SVG-based world map. Users can hover over countries to see their names in a tooltip, click on countries to view detailed information in a side panel, and use zoom controls to navigate the map at different scales.
 
+## 🎯 Problem Statement
+
+Geographic data is often presented in static formats or complex tables, making it difficult for users to engage with and understand spatial relationships. This project solves the need for an intuitive, interactive way to visualize and explore country-level data without the bloat of heavy frameworks. The application addresses the challenge of making geographical information accessible and engaging through a lightweight, responsive interface that works seamlessly across different devices and browsers.
+
 ## ✨ Features
 
 ### Core Functionality
@@ -127,13 +131,46 @@ This project demonstrates proficiency in:
 - Clean, maintainable code structure
 - Interactive data visualization
 
+## 🧩 DOM Concepts Used
+
+This project demonstrates advanced DOM manipulation through the following technical concepts:
+
+- **`document.querySelector()`**: Used to select and access specific DOM elements such as the map container, tooltip, side panel, and control buttons
+- **`addEventListener()`**: Attached to country elements, zoom controls, and close buttons to handle user interactions (click, mouseover, mouseout events)
+- **`element.style.transform`**: Dynamically applied to implement zoom functionality, scaling and positioning the map based on user input
+- **`classList.toggle()`**: Used to show/hide the side panel with smooth transitions by toggling CSS classes
+- **Dynamic `innerHTML` updates**: Populates the tooltip and side panel with country-specific information in real-time
+- **`element.style` manipulation**: Updates tooltip positioning and visibility dynamically based on cursor location
+- **Event delegation**: Efficiently manages events on multiple country elements through their parent container
+- **SVG DOM manipulation**: Handles interaction with SVG path elements representing countries
+
+## 🔜 Future Enhancements
+
+Potential improvements and additions:
+- Search functionality to find countries by name
+- Statistical data overlays (population, GDP, etc.)
+- Color-coded regions based on data
+- Multiple language support
+- Export/save functionality
+- Integration with external APIs for real-time data
+- Mobile touch gesture support
+- Keyboard navigation accessibility
+
+## ⚠️ Known Limitations
+
+- **Touch Interactions**: Currently only supports mouse interactions; touch-screen pinch-to-zoom and multi-touch gestures are under development
+- **Keyboard Navigation**: Full keyboard accessibility for navigating between countries is not yet implemented
+- **Screen Reader Support**: ARIA labels and screen reader optimization need enhancement for better accessibility
+- **Small Island Nations**: Some smaller countries may be difficult to select on lower zoom levels due to their size
+- **Country Data**: Information displayed is currently limited; integration with external APIs for comprehensive data is planned
+
 ## 📄 License
 
 This project is open for educational and personal use.
 
 ## 👤 Author
 
-Created by Tanish Bhandari.
+Created as part of TERM 2 coursework.
 
 ## 🤝 Contributing
 
@@ -142,3 +179,4 @@ Feel free to fork this project and submit pull requests for improvements!
 ---
 
 **Note**: This project requires the corresponding `styles.css` and `script.js` files to function properly. Ensure all three files (HTML, CSS, JS) are in the same directory.
+
