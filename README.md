@@ -127,25 +127,13 @@ This project demonstrates proficiency in:
 - Clean, maintainable code structure
 - Interactive data visualization
 
-## 🔜 Future Enhancements
-
-Potential improvements and additions:
-- Search functionality to find countries by name
-- Statistical data overlays (population, GDP, etc.)
-- Color-coded regions based on data
-- Multiple language support
-- Export/save functionality
-- Integration with external APIs for real-time data
-- Mobile touch gesture support
-- Keyboard navigation accessibility
-
 ## 📄 License
 
 This project is open for educational and personal use.
 
 ## 👤 Author
 
-Created as part of TERM 2 coursework.
+Created by Tanish Bhandari.
 
 ## 🤝 Contributing
 
